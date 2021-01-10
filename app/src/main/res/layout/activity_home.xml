@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/grad_bg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent ="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:id="@+id/textSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Send Signal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rellaybuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:padding="5sp"
+            android:layout_centerInParent ="true"
+            android:layout_below="@+id/textSend">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlaylcritical"
+                android:layout_marginBottom="8sp">
+
+                <ImageButton
+                    android:id="@+id/image_button_critical"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent ="true"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/criticalup"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/criticalup" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlaylemergency"
+                android:layout_below="@id/linlaylcritical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8sp">
+
+                <ImageButton
+                    android:id="@+id/image_button_emergency"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="false"
+                    android:layout_centerInParent ="true"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/emerup" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlaylnormal"
+                android:orientation="horizontal"
+                android:layout_below="@+id/linlaylemergency"
+                android:layout_marginBottom="8sp">
+
+
+                <ImageButton
+                    android:id="@+id/image_button_normal"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="false"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_centerInParent ="true"
+                    app:srcCompat="@drawable/normalup" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linlaylcancel"
+                android:orientation="horizontal"
+                android:layout_below="@+id/linlaylnormal">
+
+                <ImageButton
+                    android:id="@+id/image_button_cancel"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="false"
+                    android:layout_centerInParent ="true"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/cancelup" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
